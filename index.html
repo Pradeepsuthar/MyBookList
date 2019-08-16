@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Book Store</title>
+  </head>
+  <body>
+    <div class="container" style="min-height: 100vh;">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i> GITS<span class="text-primary">Book</span>List</h1><hr>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" id="title" class="form-control form-control-sm" placeholder="Enter Book Title">
+            </div>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input type="text" id="author" class="form-control form-control-sm" placeholder="Enter Book Author">
+            </div>
+            <div class="form-group">
+              <label for="isbn">Book ID#</label>
+              <input type="text" id="isbn" class="form-control form-control-sm" placeholder="Enter Book Id">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+          </form>
+          <table class="table table-striped mt-5">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN#</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+      </div>
+
+      <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
